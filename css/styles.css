@@ -9,6 +9,18 @@ button {
   margin-top: 10px;
 }
 
-.output{
+#output{
   display: none;
+}
+#show-movie {
+  display: none;
+}
+
+.output {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.output:hover {
+  text-decoration: underline;
 }

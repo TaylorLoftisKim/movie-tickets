@@ -18,34 +18,46 @@
         <h3>Movie Titles</h3>
         <div class="form-group">
           <form>
-            <label for="titles">Pick what movie you want to see:</label>
-            <select id="titles" class="form-control">
-              <option>Star Wars</option>
-              <option>Spongebob</option>
-              <option>Fast & Furious</option>
+            <label for="title">Pick what movie you want to see:</label>
+            <select id="title" class="form-control">
+              <option></option>
+              <option value="2">Star Wars</option>
+              <option value="1">Spongebob</option>
+              <option value="0">Fast & Furious</option>
             </select>
             <br>
-            <label for="timeOfDay">What time of day would you like to see your movie:</label>
+            <label for="TimeOfDay">What time of day would you like to see your movie:</label>
             <select id="timeOfDay" class="form-control">
-              <option>Morning</option>
-              <option>Afternoon</option>
-              <option>Evening</option>
+              <option></option>
+              <option value="1">Morning</option>
+              <option value="1">Afternoon</option>
+              <option value="2">Evening</option>
             </select>
             <br>
             <label for="age">What's your age?</label>
-            <input id="age" class="form-control">
+            <select id="age" class="form-control">
+              <option></option>
+              <option value="0">Child</option>
+              <option value="1">Adult</option>
+              <option value="2">Senior</option>
+            </select>
             <button type="submit" class="btn btn-info">Submit</button>
           </form>
         </div>
       </div>
-      <div class="output">
-        <ul>
-          
+      <div>
+        <ul id="output">
         </ul>
+        <div class="row">
+          <div id="show-movie" class="col-md-6">
+            <h2></h2>
+            <p>Title: <span class="new-title"></span>
+            <p>Time of Day: <span class="new-timeOfDay"></span>
+            <p>Age: <span class="new-age"></span>
+            <p>Price: $<span class="price"></span>
+          </div>
+        </div>
       </div>
-
-
-
     </div>
   </body>
 </html>
