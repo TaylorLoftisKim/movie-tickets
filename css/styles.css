@@ -1,4 +1,8 @@
-h3  {
+#confirm {
+  text-align: center;
+  display: none;
+}
+h3 {
   text-align: center;
 }
 h1 {
@@ -8,12 +12,16 @@ h1 {
 button {
   margin-top: 10px;
 }
-
+#outputJumbo {
+  display: none;
+}
 #output{
   display: none;
+  text-align: center;
 }
 #show-movie {
   display: none;
+  text-align: center;
 }
 
 .output {
@@ -23,4 +31,27 @@ button {
 
 .output:hover {
   text-decoration: underline;
+}
+
+h4 {
+  display: none;
+}
+
+h2  {
+  display: none;
+}
+p {
+  text-align: center;
+  font-size: 12pt;
+
+}
+ul {
+  margin-left: 400px;
+}
+body {
+  background-color: grey;
+}
+
+.jumbotron {
+  background-color: #bbb999
 }

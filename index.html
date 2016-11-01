@@ -21,40 +21,45 @@
             <label for="title">Pick what movie you want to see:</label>
             <select id="title" class="form-control">
               <option></option>
-              <option value="2">Star Wars</option>
-              <option value="1">Spongebob</option>
-              <option value="0">Fast & Furious</option>
+              <option value="Star Wars">Star Wars</option>
+              <option value="Spongebob">Spongebob</option>
+              <option value="Fast & Furious">Fast & Furious</option>
             </select>
             <br>
             <label for="TimeOfDay">What time of day would you like to see your movie:</label>
             <select id="timeOfDay" class="form-control">
               <option></option>
-              <option value="1">Morning</option>
-              <option value="1">Afternoon</option>
-              <option value="2">Evening</option>
+              <option value="Mornings">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Even">Evening</option>
             </select>
             <br>
             <label for="age">What's your age?</label>
             <select id="age" class="form-control">
               <option></option>
-              <option value="0">Child</option>
-              <option value="1">Adult</option>
-              <option value="2">Senior</option>
+              <option value="Child">Child</option>
+              <option value="Adult">Adult</option>
+              <option value="Senior">Senior</option>
             </select>
-            <button type="submit" class="btn btn-info">Submit</button>
+            <button type="submit" class="btn btn-info">Buy Ticket</button>
           </form>
         </div>
       </div>
-      <div>
-        <ul id="output">
-        </ul>
-        <div class="row">
-          <div id="show-movie" class="col-md-6">
-            <h2></h2>
-            <p>Title: <span class="new-title"></span>
-            <p>Time of Day: <span class="new-timeOfDay"></span>
-            <p>Age: <span class="new-age"></span>
-            <p>Price: $<span class="price"></span>
+      <div class="jumbotron" id="outputJumbo">
+        <h3 id="confirm">Click the link to confirm your choice.</h3>
+        <div>
+          <p id="output">
+          </p>
+          <div class="row">
+            <div id="show-movie" class="col-md-6">
+              <h2></h2>
+              <ul>
+                <li><strong>Title:</strong> <span class="new-title"></span></li>
+                <li><strong>Time of Day:</strong> <span class="new-timeOfDay"></span></li>
+                <li><strong>Age:</strong> <span class="new-age"></span></li>
+                <li><strong>Price:</strong> $<span class="price"></span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
