@@ -1,5 +1,5 @@
 //business logic
-function Show(title, time, age) {
+function Ticket(title, time, age) {
 debugger;
   this.newTitle = title;
   this.newTime = time;
@@ -8,12 +8,12 @@ debugger;
 }
 
 
-Show.prototype.fullInfo = function() {
+Ticket.prototype.fullInfo = function() {
 debugger;
   return this.newTitle + "-" + this.newTime + "-" + this.newAge;
 }
 
-Show.prototype.calculatePrice = function(newInfo) {
+Ticket.prototype.calculatePrice = function(newInfo) {
 debugger
 var price = 0;
 
@@ -53,7 +53,7 @@ debugger;
   var inputTitle = parseInt($("select#title").val());
   var inputTimeOfDay = parseInt($("select#timeOfDay").val());
   var inputAge = parseInt($("select#age").val());
-  var newInfo = new Show(inputTitle,inputTimeOfDay,inputAge);
+  var newInfo = new Ticket(inputTitle,inputTimeOfDay,inputAge);
 
   newInfo.price = newInfo.calculatePrice(newInfo);
 
